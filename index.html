@@ -99,6 +99,7 @@
     .reveal:nth-child(3) { animation-delay: 0.30s; }
     .reveal:nth-child(4) { animation-delay: 0.42s; }
     .reveal:nth-child(5) { animation-delay: 0.54s; }
+    .reveal:nth-child(6) { animation-delay: 0.66s; }
 
     @keyframes rise {
       to {
@@ -114,10 +115,10 @@
     }
 
     .logo {
-      width: clamp(120px, 34vw, 200px);
+      width: clamp(120px, 34vw, 190px);
       height: auto;
       display: block;
-      filter: drop-shadow(0 0 40px rgba(225, 6, 0, 0.28));
+      filter: drop-shadow(0 0 44px rgba(225, 6, 0, 0.35));
     }
 
     .brand {
@@ -130,9 +131,9 @@
     h1 {
       font-family: "Anton", "Inter", sans-serif;
       font-weight: 400;
-      font-size: clamp(3rem, 13vw, 6rem);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
+      font-size: clamp(2.75rem, 11vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: 0.015em;
       text-transform: uppercase;
     }
 
@@ -141,10 +142,12 @@
 
     .tagline {
       font-family: "JetBrains Mono", monospace;
-      font-size: 0.72rem;
-      letter-spacing: 0.32em;
+      font-weight: 500;
+      font-size: 0.7rem;
+      letter-spacing: 0.26em;
       text-transform: uppercase;
       color: var(--muted);
+      padding-left: 0.26em;
     }
 
     .divider {
@@ -162,6 +165,33 @@
     }
 
     .about .dim { color: var(--muted); }
+
+    .quote {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .quote blockquote {
+      font-family: "Inter", sans-serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: clamp(1.35rem, 5vw, 1.9rem);
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+
+    .quote blockquote .mark { color: var(--red); }
+
+    .quote figcaption {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
 
     .ventures {
       font-family: "JetBrains Mono", monospace;
@@ -262,6 +292,13 @@
       </p>
     </div>
 
+    <figure class="quote reveal">
+      <blockquote>
+        <span class="mark">&ldquo;</span>Forced evolution<span class="mark">&rdquo;</span>
+      </blockquote>
+      <figcaption>&mdash; J.B.</figcaption>
+    </figure>
+
     <p class="ventures reveal">
       <span class="label">Ventures</span>
       <span class="item">Zero Maintenance &mdash; Auto Detailing</span>
@@ -269,7 +306,7 @@
 
     <div class="contact reveal">
       <span class="contact-label">Get in touch</span>
-      <a href="mailto:contact@zerocorps.org">contact@zerocorps.org</a>
+      <a href="mailto:hello@zerocorps.org">hello@zerocorps.org</a>
     </div>
   </main>
 
